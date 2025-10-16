@@ -9,7 +9,7 @@ const requestListener = (req: IncomingMessage, res: ServerResponse) => {
         songsRoute(req, res);
     } else {
         res.writeHead(200, { "Content-Type": "application/json" });
-        res.end(JSON.stringify({ message: "Hello world" }));
+        res.end(JSON.stringify({ message: "404: not found" }));
     }
     
 };

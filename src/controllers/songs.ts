@@ -13,8 +13,8 @@ export const getSongById = (id: number): Song | undefined => {
     return song;
 }
 
-export const addSong = (title: string, artist: string, duration: string): Song => {
-    const newSong: Song = { id: currentId++, title, artist, duration };
+export const addSong = (title: string, artist: string, duration: number): Song => {
+    const newSong: Song = { id: currentId++, title, artist, duration: Number(duration) };
     songs.push(newSong);
     return newSong;
 }
